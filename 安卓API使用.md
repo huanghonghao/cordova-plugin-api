@@ -8,6 +8,14 @@
 <script type="text/javascript" src="cordova.js"></script>
 ```
 
+> 一下所有脚本都需要在 `deviceready` 事件完成后进行安全调用
+
+*eg:*
+
+```js
+document.addEventListener('deviceready', onDeviceReady, false);
+```
+
 
 
 ## 微信API
