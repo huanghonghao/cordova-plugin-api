@@ -34,8 +34,6 @@ cordova create test com.suoju.test testApp
 
 ## 步骤2-添加平台支持
 
-> 添加平台支持
-
 您需要在命令提示符下打开您的项目目录。在我们的示例中是 **test**。你应该只选择你需要的平台。为了能够使用指定的平台，您需要安装特定的平台SDK。由于我们在Windows上开发，我们可以使用以下平台。我们还安装了[android SDK](http://www.dba.cn/book/android/) ，因此我们只会为本教程安装Android平台。
 
 添加平台支持：
@@ -55,10 +53,6 @@ cordova platform rm android
 ```
 cordova platform ls
 ```
-
-
-
-> 添加插件
 
 
 
@@ -129,3 +123,38 @@ npm install -g cordova-hot-code-push-cli
     </chcp>
 ```
 
+
+
+
+
+# 常用插件
+
+* 拨打电话
+
+```powershell
+cordova plugin add https://github.com/huanghonghao/CordovaCallNumberPlugin.git
+```
+
+
+
+* 状态栏工具
+* <https://github.com/apache/cordova-plugin-statusbar>
+
+```
+cordova plugin add cordova-plugin-statusbar
+```
+
+
+
+# config.xml 配置
+
+```xml
+<!-- 禁止IOS上下拖动 -->
+<preference name="DisallowOverscroll" value="true" />
+```
+
+
+
+## IOS11 webView适配
+
+* https://www.jianshu.com/p/88403ff3b907

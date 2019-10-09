@@ -124,3 +124,9 @@ window.plugins.CallNumber.isCallSupported((result) => {
 });
 ```
 
+
+
+## 状态栏操作
+
+<https://github.com/apache/cordova-plugin-statusbar>
+
