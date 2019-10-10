@@ -144,6 +144,16 @@ cordova plugin add https://github.com/huanghonghao/CordovaCallNumberPlugin.git
 cordova plugin add cordova-plugin-statusbar
 ```
 
+* 粘贴板
+
+https://github.com/ihadeed/cordova-clipboard
+
+```
+cordova plugin add cordova-clipboard
+```
+
+
+
 
 
 # config.xml 配置

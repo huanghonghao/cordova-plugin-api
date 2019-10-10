@@ -116,7 +116,7 @@ window.plugins.CallNumber.callNumber(function onSuccess(result){
 
 检查是否支持拨号
 
-```
+```js
 window.plugins.CallNumber.isCallSupported((result) => {
     $.alert(`类型：${typeof result}, 值：${result}`);
 }, (result) => {
@@ -129,4 +129,16 @@ window.plugins.CallNumber.isCallSupported((result) => {
 ## 状态栏操作
 
 <https://github.com/apache/cordova-plugin-statusbar>
+
+
+
+## 剪贴板
+
+```js
+cordova.plugins.clipboard.copy(text, function onSuccess() {}, function onError(){});
+
+cordova.plugins.clipboard.paste(function onSuccess(text) { alert(text); }, function onError() {});
+
+cordova.plugins.clipboard.clear(function onSuccess() {}, function onError() {});
+```
 
