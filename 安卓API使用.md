@@ -68,7 +68,11 @@ http://cordova.axuer.com/docs/zh-cn/latest/cordova/events/events.html
 
 ## 手机定位
 
+详细文档：
+
 http://cordova.axuer.com/docs/zh-cn/latest/reference/cordova-plugin-geolocation/index.html
+
+简单用法：
 
 ```js
 navigator.geolocation.getCurrentPosition((position) => {
