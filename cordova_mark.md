@@ -140,7 +140,7 @@ cordova plugin add https://github.com/huanghonghao/CordovaCallNumberPlugin.git
 * 状态栏工具
 * <https://github.com/apache/cordova-plugin-statusbar>
 
-```
+```shell
 cordova plugin add cordova-plugin-statusbar
 ```
 
@@ -150,6 +150,12 @@ https://github.com/ihadeed/cordova-clipboard
 
 ```
 cordova plugin add cordova-clipboard
+```
+
+* 支付宝APP支付
+
+```sh
+cordova plugin add cordova-plugin-alipay-v2 --variable APP_ID=your AppId
 ```
 
 

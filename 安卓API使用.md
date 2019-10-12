@@ -88,6 +88,30 @@ navigator.geolocation.getCurrentPosition((position) => {
     { maximumAge: 3000, timeout: 5000, enableHighAccuracy: true });
 ```
 
+*issues:*
+
+**经测试发现ios10及以上版本无法直接通过http协议的页面获取定位，苹果对webkit定位权限进行了修改，所有定位请求的页面必须是https协议的**
+
+* 解决方法
+
+1. 将网站的http设置为https
+
+2. 通过第三方解决，即通过调用百度地图或者腾讯地图来获取地理位置
+3. 使用腾讯提供的组件
+
+> step1：引入js文件
+>
+> ```js
+> <scarpt src="<http://3gimg.qq.com/lightmap/components/geolocation/geolocation.min.js>" />
+> ```
+>
+> step2：创建定位对象，即可发起定位
+>
+> ```js
+> var geolocation = new qq.maps.Geolocation("DZYBZ-73WWI-FG6GZ-5JRFR-PNVIE-4OFUL","myapp");
+> geolocation.getLocation(sucCallback, errCallback);
+> ```
+
 
 
 ## 拨打电话
