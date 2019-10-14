@@ -167,6 +167,9 @@ cordova plugin add cordova-plugin-alipay-v2 --variable APP_ID=your AppId
 ```xml
 <!-- 禁止IOS上下拖动 -->
 <preference name="DisallowOverscroll" value="true" />
+
+<!-- 隐藏键盘上的工具栏，适用于iOS、BlackBerry -->
+<preference name="HideKeyboardFormAccessoryBar" value="true"/>
 ```
 
 
